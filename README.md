@@ -4,6 +4,12 @@ A simple hardware modification for the SONOFF ZBM5 Zigbee smart wall switch (1-,
 
 The modification described here was tested by the author on their own switch. The physical location of the blue LED varies by gang/version, but the same LED-drive circuit is used.
 
+In SONOFF ZBM5 switches, the position of the blue LED depends on the number of gangs the switch has (LEDs 6–8). There is a single blue LED in each unit, and it is driven by the same circuit.
+
+![default](images/source-image-01.png)
+
+![default](images/source-image-02.png)
+
 > **Warning — mains-powered equipment.** This modification requires opening and soldering a mains-powered wall switch. Disconnect it completely from mains power before opening it. Do not work on the device while it is connected to mains. This modification is at your own risk and may damage the device, affect its warranty, and compromise its safety if performed incorrectly.
 
 ## What this modification does
