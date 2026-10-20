@@ -2,7 +2,7 @@
 
 A simple hardware modification for the SONOFF ZBM5 Zigbee smart wall switch (1-, 2- and 3-gang versions) that makes its blue LED stay on continuously.
 
-The modification described here was tested by the author on their own switch. The physical location of the blue LED varies by gang/version, but the same LED-drive circuit is used.
+I created and tested this modification on my own devices.
 
 In SONOFF ZBM5 switches, the position of the blue LED depends on the number of gangs the switch has (LEDs 6–8). There is a single blue LED in each unit, and it is driven by the same circuit.
 
