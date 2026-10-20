@@ -16,11 +16,15 @@ In SONOFF ZBM5 switches, the position of the blue LED depends on the number of g
 
 The blue LED is driven through this path:
 
+![default](images/source-image-03.jpeg)
+
+![default](images/source-image-04.png)
+
 `Zigbee IC GPIO → R10 (1 kΩ) → Q4 (A2SHB MOSFET) → blue LED → R14 (1.5 kΩ) → +3.3 V`
 
 In the original circuit, the Zigbee IC controls Q4, which switches the LED. The modification removes Q4 and installs a **680 Ω resistor** in its place between the LED's switched side and GND. This provides a permanent current path, so the blue LED remains on.
 
-**Trade-off:** the switch's blue network-indicator function is lost. The LED no longer indicates Zigbee network status.
+### The switch's blue network-indicator function is lost. The LED no longer indicates Zigbee network status.
 
 ## Parts and tools
 
@@ -32,6 +36,10 @@ The board also has an existing R14 current-limiting resistor marked as 1.5 kΩ.
 
 ## Procedure
 
+![default](images/source-image-06.png)
+
+![default](images/source-image-07.jpeg)
+
 1. Disconnect the switch completely from mains power and remove it from its installation.
 2. Open the enclosure carefully.
 3. Locate Q4, marked **A2SHB**, in the blue-LED driver circuit. The blue LED's physical position differs between 1-, 2- and 3-gang versions; consult the photos and trace the circuit rather than relying only on the LED reference number.
@@ -40,7 +48,9 @@ The board also has an existing R14 current-limiting resistor marked as 1.5 kΩ.
 6. Inspect the soldering carefully for bridges, lifted pads and unintended connections before reassembly.
 7. Reassemble the switch fully before reconnecting it to mains power.
 
-Do not rely on component position alone: verify the actual pads and circuit connections on your board before soldering.
+And the result:
+
+![default](images/source-image-05.jpeg)
 
 ## Adding an extra indicator LED on multi-gang versions
 
