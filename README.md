@@ -23,9 +23,9 @@ The blue LED is driven through this path:
 
 ## What this modification does
 
-In the original circuit, the Zigbee IC controls Q4, which switches the LED. The modification removes Q4 and installs a **680 Ω resistor** in its place between the LED's switched side and GND. This provides a permanent current path, so the blue LED remains on.
+In the original circuit, Q4 (an A2SHB MOSFET) is controlled by the Zigbee IC and switches the blue LED on and off. I developed and tested a simple hardware modification: I removed Q4 and replaced it with a **680 Ω resistor** connected between the LED's cathode and GND. This creates a permanent current path, keeping the blue LED continuously illuminated.
 
-### The switch's blue network-indicator function is lost. The LED no longer indicates Zigbee network status.
+### This modification disables the blue LED's Zigbee network-indicator function. The LED stays on permanently and no longer indicates the Zigbee network status.
 
 ## Parts and tools
 
