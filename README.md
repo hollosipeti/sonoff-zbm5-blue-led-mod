@@ -54,13 +54,8 @@ And the result:
 
 ## Adding an extra indicator LED on multi-gang versions
 
-For multi-gang versions, an additional LED can be installed under a button, if desired. The author's notes specify an LED with approximately **2.5 V forward voltage at 5 mA**. In this arrangement, the additional 680 Ω resistor may be omitted, as shown in the author's diagram.
-
+For multi-gang versions, an additional LED can be installed under a button, if desired. The LED with approximately **2.5 V forward voltage at 5 mA**. In this arrangement, the additional 680 Ω resistor may be omitted.
 Verify the LED polarity and current path for your particular board before making this change.
-
-## Reference images
-
-The images in [`images/`](images/) were extracted from the author's original document and show the switch variants, PCB locations, original driver circuit and modified circuit.
 
 ## Scope and limitations
 
