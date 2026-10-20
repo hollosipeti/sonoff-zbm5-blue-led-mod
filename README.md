@@ -8,7 +8,7 @@ In SONOFF ZBM5 switches, the position of the blue LED depends on the number of g
 
 ![default](images/source-image-01.png)
 
-![default](images/source-image-02.png)
+![default](images/source-image-02.jpeg)
 
 > **Warning — mains-powered equipment.** This modification requires opening and soldering a mains-powered wall switch. Disconnect it completely from mains power before opening it. Do not work on the device while it is connected to mains. This modification is at your own risk and may damage the device, affect its warranty, and compromise its safety if performed incorrectly.
 
