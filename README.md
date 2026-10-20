@@ -12,7 +12,6 @@ In SONOFF ZBM5 switches, the position of the blue LED depends on the number of g
 
 ![default](images/source-image-02.jpeg)
 
-## What this modification does
 
 The blue LED is driven through this path:
 
@@ -21,6 +20,8 @@ The blue LED is driven through this path:
 ![default](images/source-image-04.png)
 
 `Zigbee IC GPIO → R10 (1 kΩ) → Q4 (A2SHB MOSFET) → blue LED → R14 (1.5 kΩ) → +3.3 V`
+
+## What this modification does
 
 In the original circuit, the Zigbee IC controls Q4, which switches the LED. The modification removes Q4 and installs a **680 Ω resistor** in its place between the LED's switched side and GND. This provides a permanent current path, so the blue LED remains on.
 
