@@ -21,13 +21,13 @@ The blue LED is driven through this path:
 
 `Zigbee IC GPIO → R10 (1 kΩ) → Q4 (A2SHB MOSFET) → blue LED → R14 (1.5 kΩ) → +3.3 V`
 
-## What this modification does
+## What this modification does?
 
 In the original circuit, Q4 (an A2SHB MOSFET) is controlled by the Zigbee IC and switches the blue LED on and off. I developed and tested a simple hardware modification: I removed Q4 and replaced it with a **680 Ω resistor** connected between the LED's cathode and GND. This creates a permanent current path, keeping the blue LED continuously illuminated.
 
 ### This modification disables the blue LED's Zigbee network-indicator function. The LED stays on permanently and no longer indicates the Zigbee network status.
 
-## Parts and tools
+## Parts and tools:
 
 - 680 Ω resistor (for the always-on blue LED modification)
 - Soldering tools suitable for small SMD components
@@ -35,7 +35,7 @@ In the original circuit, Q4 (an A2SHB MOSFET) is controlled by the Zigbee IC and
 
 The board also has an existing R14 current-limiting resistor marked as 1.5 kΩ.
 
-## Procedure
+## Procedure:
 
 ![default](images/source-image-06.png)
 
@@ -53,18 +53,18 @@ And the result:
 
 ![default](images/source-image-05.jpeg)
 
-## Adding an extra indicator LED on multi-gang versions
+## Adding an extra indicator LED on multi-gang versions:
 
 For multi-gang versions, an additional LED can be installed under a button, if desired. The LED with approximately **2.5 V forward voltage at 5 mA**. In this arrangement, the additional 680 Ω resistor may be omitted.
 Verify the LED polarity and current path for your particular board before making this change.
 
-## Scope and limitations
+## Scope and limitations:
 
 - This is a hardware modification, not a Zigbee2MQTT or Home Assistant software setting.
 - The network-indicator function is sacrificed.
 - Board layouts and blue-LED placement can vary between versions.
 - The component values and procedure reflect the author's documented build; they are not a manufacturer-approved modification.
 
-## Contributions
+## Contributions:
 
 If you test this on another ZBM5 variant, please share the exact model/board revision, clear photos before and after modification, and the measured result.
